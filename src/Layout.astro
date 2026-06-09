@@ -1,3 +1,8 @@
+---
+import './utils.css';
+import { GeistSans } from 'geist/font/sans';
+---
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,11 +11,20 @@
   <meta name="description" content="Nova es un asistente de inteligencia artificial diseñado para ayudarte a resolver tus dudas y apoyar a los docentes con recordatorios de tareas, creación de grupos, exposición de material, y más.">
   <meta name="author" content="SaskDev">
   <title>Nova - Asistente de IA</title>
+
 </head>
 <body>
   <slot />
 </body>
 <style is:global>
   @import 'tailwindcss';
+
+  @theme {
+    --color-primary: #0f0f0f;
+  }
+
+  body {
+    font-family: "Geist Sans", sans-serif;
+  }
 </style>
 </html>
