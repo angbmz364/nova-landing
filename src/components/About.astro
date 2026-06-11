@@ -1,0 +1,45 @@
+---
+import Card from "./Card.astro";
+---
+
+<section class="w-screen" id="about">
+  <div
+    class="flex flex-col space-y-10 items-start justify-center w-[90%] mx-auto"
+  >
+    <h3 class="font-semibold mt-10 text-primary text-lg">[01 ¿Qué es?]</h3>
+    <h2
+      class="text-secondary text-5xl [&>span]:text-primary font-bold max-w-[60%]"
+    >
+      No es solo IA - Nova es <span>solución</span>, <span>asistente</span> y <span
+        >administración</span
+      >.
+    </h2>
+    <div class="w-full space-y-2">
+      <Card
+        title="Una herramienta para el aula"
+        description="Nova fue creada para apoyar la dinámica diaria del salón de clases, facilitando tareas comunes y permitiendo que docentes y estudiantes aprovechen mejor su tiempo."
+      />
+
+      <Card
+        title="Tecnología centrada en las personas"
+        description="La tecnología debe complementar la enseñanza, no reemplazarla. Nova busca acompañar el trabajo del docente y hacer el aprendizaje más accesible."
+      />
+
+      <Card
+        title="Diseñada para colegios"
+        description="Cada función de Nova está pensada para responder a necesidades reales del entorno educativo, respetando la organización y las rutinas de cada aula."
+      />
+
+      <Card
+        title="Privacidad y funcionamiento local"
+        description="Nova puede operar sin conexión a internet y mantiene la información dentro del propio entorno educativo, priorizando la seguridad y la privacidad."
+      />
+
+      <Card
+        title="Adquiere a Nova"
+        isBig={true}
+        description="¿Listo para empezar?"
+      />
+    </div>
+  </div>
+</section>
