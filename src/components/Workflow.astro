@@ -1,0 +1,35 @@
+---
+import WorkflowCard from "./WorkflowCard.astro"
+---
+
+<section class="w-screen mb-10 mt-40" id="workflow">
+  <div
+    class="flex flex-col items-start justify-center w-[90%] mx-auto"
+  >
+    <h3 class="font-semibold text-primary text-lg">[03 Flujo de trabajo]</h3>
+    <div class="flex justify-between items-center relative">
+      <h2
+        class="text-secondary sticky top-0 pt-10 self-start text-5xl [&>span]:text-primary font-bold max-w-[40%]"
+      >
+        Nada complicado - Usalo de forma <span>simple</span>.
+      </h2>
+      <div class="flex flex-col pt-10 gap-2">
+        <WorkflowCard
+          title="Descubre"
+          description="Habla con Nova, y descubre todas sus capacidades y conocimientos con los que puede ayudarte."
+          step={1}
+        />
+        <WorkflowCard
+          title="Ordena"
+          description="Dale ordenes a nova, como guardar una tarea, formar grupos de estudiantes, o apoyar con la explicación en clase."
+          step={2}
+        />
+        <WorkflowCard
+          title="Usa"
+          description="Utiliza Nova para realizar tareas y actividades en tu día a día."
+          step={3}
+        />
+      </div>
+    </div>
+  </div>
+</section>
