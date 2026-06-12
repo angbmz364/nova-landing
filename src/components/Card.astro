@@ -9,7 +9,7 @@ const { title, description, isBig } = Astro.props;
 ---
 
 <div
-  class=`flex justify-between items-center w-full p-8 rounded-lg w-full ${isBig ? 'bg-primary *:text-3xl text-white text-primary' : 'bg-[#ffffff] [&>p]:text-secondary/80' }`
+  class=`flex justify-between shadow-xs items-center w-full p-8 rounded-lg w-full ${isBig ? 'bg-primary *:text-3xl text-white text-primary' : 'bg-[#ffffff] [&>p]:text-secondary/80' }`
 >
   <p class="max-w-[50%]">{description}</p>
   <h4 class="text-3xl">{title}</h4>
