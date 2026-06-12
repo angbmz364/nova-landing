@@ -16,7 +16,31 @@ import Card from "./Card.astro";
         Ofrece más que solo una herramienta - <span>Ofrece control</span>.
       </h2>
     </div>
-    content here
+    <div class="grid grid-cols-3 grid-rows-3 gap-2 w-full auto-rows-[150px]">
+      <!-- Card 1: Large card spanning 2 columns and 2 rows -->
+      <div class="col-span-2 row-span-2 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-2 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow">
+        <div class="text-2xl font-bold">Card 1</div>
+        <div class="text-xs text-slate-400 mt-1">Featured</div>
+      </div>
+      
+      <!-- Card 2: Tall card spanning 3 rows -->
+      <div class="row-span-3 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-2 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow">
+        <div class="text-2xl font-bold">Card 2</div>
+        <div class="text-xs text-slate-400 mt-1">Vertical</div>
+      </div>
+      
+      <!-- Card 4: Bottom left -->
+      <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-2 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow">
+        <div class="text-lg font-semibold">Card 4</div>
+        <div class="text-xs text-slate-400 mt-1">Bottom</div>
+      </div>
+      
+      <!-- Card 3: Bottom center -->
+      <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg p-2 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow">
+        <div class="text-lg font-semibold">Card 3</div>
+        <div class="text-xs text-slate-400 mt-1">Center</div>
+      </div>
+    </div>
     <div class="w-full space-y-2">
     </div>
   </div>
