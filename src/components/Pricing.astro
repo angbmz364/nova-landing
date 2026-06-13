@@ -1,0 +1,118 @@
+---
+
+---
+
+<section class="w-screen mb-10 mt-40" id="pricing">
+  <div
+    class="flex flex-col space-y-10 items-start justify-center w-[90%] mx-auto"
+  >
+    <div class="flex items-start w-full justify-between">
+      <h3 class="font-semibold text-primary text-lg">[04 Planes]</h3>
+      <h2
+        class="text-secondary text-5xl text-right [&>span]:text-primary font-semibold max-w-[60%]"
+      >
+        <span>Planes flexibles. Gran utilidad.</span> Adquierelo para tu institución.
+      </h2>
+    </div>
+    <p class="text-zinc-500 text-sm">
+      * Los precios listados son estimaciones para La Merced, Chanchamayo, para
+      un precio preciso, porfavor <a href="#contact" class="underline"
+        >contactanos</a>
+    </p>
+    <div class="pricing_section *:bg-white *:shadow-xs *:rounded-sm">
+      <div class="p-4 space-y-4">
+        <h2 class="text-primary font-semibold text-2xl">Plan Piloto</h2>
+        <p class="text-zinc-500">
+          Perfecto para comenzar a integrar y usar a Nova en un aula del
+          colegio.
+        </p>
+        <span class="font-semibold text-3xl">S/149</span><span
+          class="text-zinc-500">/mes</span
+        >
+        <p class="rounded-full my-4 bg-zinc-100 text-primary px-2.5 py-1 w-max">
+          ¿Que incluye?
+        </p>
+        <ul class="*:pl-5 pricing_section_ul">
+          <li>1 Aula de clase</li>
+          <li>Hasta 40 estudiantes</li>
+          <li>Gestión de tareas</li>
+          <li>Memoria persistente</li>
+          <li>Creación automática de grupos</li>
+          <li>Pasar lista automáticamente</li>
+          <li>Soporte básico</li>
+        </ul>
+        <a href="#" class="rounded-full bg-primary text-white text-center w-full block py-2">Comienza con el Plan Piloto</a>
+      </div>
+      <div class="p-4 space-y-4 relative">
+        <span class="absolute border px-2 py-1 border-zinc-800 text-zinc-800 rounded-full right-5">Plan Recomendado</span>
+        <h2 class="text-primary font-semibold text-2xl">Plan Institucional</h2>
+        <p class="text-zinc-500 max-w-[500px]">
+          Ideal para instituciones que buscan reducir carga administrativa y
+          mejorar la experiencia en clases.
+        </p>
+        <span class="font-semibold text-3xl">Desde S/399</span><span
+          class="text-zinc-500">/mes</span
+        >
+        <section class="flex items-center gap-20">
+          <div>
+            <p
+              class="rounded-full my-4 bg-zinc-100 text-primary px-2.5 py-1 w-max"
+            >
+              Que incluye
+            </p>
+            <ul class="*:pl-5 pricing_section_ul">
+              <li>5 Aulas de clase</li>
+              <li>Estudiantes Ilimitados</li>
+              <li>Personalización del colegio</li>
+              <li>Horarios y profesores configurables</li>
+              <li>Memoria avanzada</li>
+              <li>Actualizaciones prioritarias</li>
+              <li>Soporte prioritario</li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="rounded-full my-4 bg-zinc-100 text-primary px-2.5 py-1 w-max"
+            >
+              Que incluye
+            </p>
+            <ul class="*:pl-5 pricing_section_ul">
+              <li>5 Aulas de clase</li>
+              <li>Estudiantes Ilimitados</li>
+              <li>Personalización del colegio</li>
+              <li>Horarios y profesores configurables</li>
+              <li>Memoria avanzada</li>
+              <li>Actualizaciones prioritarias</li>
+              <li>Soporte prioritario</li>
+            </ul>
+          </div>
+        </section>
+        <a href="#" class="inline-block rounded-full bg-primary text-white text-center px-8 py-2">Adquiere a Nova</a>
+        <p class="text-zinc-500 inline-block ml-5">El plan se puede ajustar a las necesidades de cada institución.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .pricing_section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 500px 1fr;
+    gap: 0.5rem;
+  }
+
+  .pricing_section_ul > li {
+    position: relative;
+  }
+  .pricing_section_ul > li::before {
+    position: absolute;
+    content: "";
+    left: 4px;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333;
+  }
+</style>
