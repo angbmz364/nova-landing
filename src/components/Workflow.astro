@@ -9,7 +9,7 @@ import WorkflowCard from "./WorkflowCard.astro"
     <h3 class="text-primary text-lg">[03 Flujo de trabajo]</h3>
     <div class="flex justify-between items-center relative">
       <h2
-        class="text-secondary sticky top-0 pt-10 self-start text-5xl [&>span]:text-primary font-semibold max-w-[40%]"
+        class="text-secondary workflow__title sticky top-0 pt-10 self-start text-5xl [&>span]:text-primary font-semibold max-w-[40%]"
       >
         Nada complicado - Usalo de forma <span>simple</span>.
       </h2>
@@ -33,3 +33,7 @@ import WorkflowCard from "./WorkflowCard.astro"
     </div>
   </div>
 </section>
+<script>
+  import workflowAnimation from "../scripts/animations/Workflow";
+  workflowAnimation()
+</script>

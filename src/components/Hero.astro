@@ -4,7 +4,7 @@ import Fact from "./Fact.astro"
 
 <main class="w-screen flex-center py-10">
   <section class="w-[90%]">
-    <h1 class="text-primary text-center text-[12rem] font-bold my-10">Nova</h1>
+    <h1 class="hero__title text-primary text-center text-[12rem] font-bold my-10">Nova</h1>
     <section class="w-full flex items-center justify-between">
       <div class="flex gap-10">
         <Fact title="10+" description="Caracteristicas útiles" />
@@ -17,3 +17,8 @@ import Fact from "./Fact.astro"
     </section>
   </section>
 </main>
+<script>
+  import heroAnimation from "../scripts/animations/Hero";
+
+  heroAnimation();
+</script>

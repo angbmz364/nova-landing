@@ -14,13 +14,13 @@
         <span>Planes flexibles. Gran utilidad.</span> Adquierelo para tu institución.
       </h2>
     </div>
-    <p class="text-zinc-500 text-sm">
+    <p class="text-zinc-500 text-sm pricing__disclaimer">
       * Los precios listados son estimaciones para La Merced, Chanchamayo, para
       un precio preciso, porfavor <a href="#contact" class="underline"
         >contactanos</a>
     </p>
     <div class="pricing_section *:bg-white *:shadow-xs *:rounded-sm">
-      <div class="p-4 space-y-4">
+      <div class="p-4 space-y-4 pricing__card">
         <h2 class="text-primary font-semibold text-2xl">Plan Piloto</h2>
         <p class="text-zinc-500">
           Perfecto para comenzar a integrar y usar a Nova en un aula del
@@ -43,7 +43,7 @@
         </ul>
         <a href="#" class="rounded-full bg-primary text-white text-center w-full block py-2">Comienza con el Plan Piloto</a>
       </div>
-      <div class="p-4 space-y-4 relative">
+      <div class="p-4 space-y-4 relative pricing__card">
         <span class="absolute border px-2 py-1 border-zinc-800 text-zinc-800 rounded-full right-5">Plan Recomendado</span>
         <h2 class="text-primary font-semibold text-2xl">Plan Institucional</h2>
         <p class="text-zinc-500 max-w-[500px]">
@@ -116,3 +116,8 @@
     background-color: #333;
   }
 </style>
+
+<script>
+  import pricingAnimations from "../scripts/animations/Pricing";
+  pricingAnimations()
+</script>
