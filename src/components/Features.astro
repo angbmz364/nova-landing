@@ -1,7 +1,3 @@
----
-import Card from "./Card.astro";
----
-
 <section class="w-screen mb-10 mt-40" id="features">
   <div
     class="flex flex-col space-y-10 items-start  justify-center w-[90%] mx-auto"
@@ -16,28 +12,48 @@ import Card from "./Card.astro";
         Ofrece más que solo una herramienta - <span>Ofrece control</span>.
       </h2>
     </div>
-    <div class="grid grid-cols-3 grid-rows-3 gap-2 w-full auto-rows-[150px]">
-      <div class="col-span-2 row-span-2 bg-white rounded-lg p-2 flex flex-col items-center justify-center text-secondary shadow-xs">
-        <div class="text-2xl font-bold">Carta 1</div>
-        <div class="text-xs text-zinc-400 mt-1">principal</div>
+    <div class="grid grid-cols-3 grid-rows-3 gap-2 w-full ">
+      <div class="col-span-2 row-span-2 bg-white py-4 px-6 rounded-xl p-2 flex justify-between items-end text-secondary shadow-xs features__card">
+        
+        <div class="mb-8">
+          <h4 class="text-3xl font-semibold text-primary mb-4">Gestión del aula</h4>
+          <p class="text-secondary max-w-[480px]">
+            Nova puede pasar lista, formar grupos, agendar tareas, editar registros, recordar el horario, responder preguntas, y mucho más.
+          </p>
+        </div>
+
       </div>
       
-      <div class="row-span-3 bg-white rounded-lg p-2 flex flex-col items-center justify-center text-secondary shadow-xs">
-        <div class="text-2xl font-bold">Carta 2</div>
-        <div class="text-xs text-zinc-400 mt-1">vertical</div>
+      <div class="row-span-2 rounded-xl p-2 flex flex-col items-center justify-between text-secondary shadow-xs bg-primary features__card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="flex-1 text-white size-40"><path d="M10.114 4.462A14.5 14.5 0 0 1 12 2a10 10 0 0 1 9.313 13.643"/><path d="M15.557 15.556A14.5 14.5 0 0 1 12 22 10 10 0 0 1 4.929 4.929"/><path d="M15.892 10.234A14.5 14.5 0 0 0 12 2a10 10 0 0 0-3.643.687"/><path d="M17.656 12H22"/><path d="M19.071 19.071A10 10 0 0 1 12 22 14.5 14.5 0 0 1 8.44 8.45"/><path d="M2 12h10"/><path d="m2 2 20 20"/></svg>
+        <div class="p-5">
+          <h4 class="text-3xl font-semibold text-white mb-4">Funcionamiento Offline</h4>
+          <p class="text-white/80 max-w-[80%]">Nova es capaz de operar y funcionar con todas sus caracteristicas sin necesidad de conexión a internet.</p>
+        </div>
       </div>
       
-      <div class="bg-white rounded-lg p-2 flex flex-col items-center justify-center text-secondary shadow-xs">
-        <div class="text-lg font-semibold">Carta 4</div>
-        <div class="text-xs text-zinc-400 mt-1">abajo</div>
+      <div class="rounded-xl p-2 bg-primary flex flex-col items-center justify-center text-secondary shadow-xs features__card">
+        <img src="/logo.webp" alt="Logo de Nova" class="size-50" style="filter: invert(1)">
       </div>
       
-      <div class="bg-white rounded-lg p-2 flex flex-col items-center justify-center text-secondary shadow-xs">
-        <div class="text-lg font-semibold">Carta 3</div>
-        <div class="text-xs text-zinc-400 mt-1">centro</div>
+      <div class="bg-white rounded-xl py-4 px-6 items-start justify-between flex flex-col shadow-xs features__card">
+        <h4 class="text-3xl font-semibold text-primary">Personalización Total</h4>
+        <p class="text-secondary">
+          Nova puede conocer horarios, alumnos, profesores, y brindar respuestas informadas y controladas. 
+        </p>
+      </div>
+      <div class="bg-white rounded-xl py-4 px-6 items-start justify-between flex flex-col shadow-xs features__card">
+        <h4 class="text-3xl font-semibold text-primary">Personalización Total</h4>
+        <p class="text-secondary">
+          Nova puede conocer horarios, alumnos, profesores, y brindar respuestas informadas y controladas. 
+        </p>
       </div>
     </div>
     <div class="w-full space-y-2">
     </div>
   </div>
 </section>
+<script>
+  import {featuresAnimations} from '../scripts/animations/Features'
+  featuresAnimations()
+</script>
