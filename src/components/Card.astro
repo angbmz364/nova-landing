@@ -16,6 +16,8 @@ const { title, description, isBig } = Astro.props;
       : "bg-white [&>p]:text-secondary/80"
   ]}
 >
-  <p class="max-w-[50%]">{description}</p>
-  <h4 class="text-3xl">{title}</h4>
+  <p class=`max-w-[50%] ${isBig ? 'text-3xl' : '' }` >{description}</p>
+  <h4 class="text-3xl">
+    {title}
+  </h4>
 </div>
